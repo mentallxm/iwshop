@@ -1,0 +1,7 @@
+<?php return array (
+  'pdcount2' => 0,
+  'pdcount' => 22,
+  'cacount' => 10,
+  'spcount' => 0,
+  'brcount' => 0,
+);

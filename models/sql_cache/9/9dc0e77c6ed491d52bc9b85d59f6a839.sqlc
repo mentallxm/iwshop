@@ -1,0 +1,5 @@
+<?php return array (
+  'count1' => 9,
+  'count2' => 0,
+  'count3' => 0,
+);

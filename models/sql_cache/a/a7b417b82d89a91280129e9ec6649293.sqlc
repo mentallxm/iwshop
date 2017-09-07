@@ -1,0 +1,11 @@
+<?php return array (
+  'payed' => 0,
+  'canceled' => 0,
+  'delivering' => 0,
+  'all' => 0,
+  'unpay' => 0,
+  'refunded' => 0,
+  'received' => 0,
+  'closed' => 0,
+  'refunding' => 0,
+);

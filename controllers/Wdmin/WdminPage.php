@@ -1210,9 +1210,9 @@ class WdminPage extends ControllerAdmin {
         {
             $url = $config->domain."?/vProduct/view/id=".$product_id;
 
-            $qrcode_uri = $config->domain.'/uploads/qrcode/product/'.$product_id.".png";
+            $qrcode_uri = $config->domain.'/uploads/product_qrcode/'.$product_id.".png";
 
-            $qrcode_path = APP_PATH.'/uploads/qrcode/product/'.$product_id.".png";
+            $qrcode_path = APP_PATH.'/uploads/product_qrcode/'.$product_id.".png";
 
             if(!file_exists($qrcode_path))
             {

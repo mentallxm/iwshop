@@ -1196,4 +1196,35 @@ class WdminPage extends ControllerAdmin {
         $this->show(self::TPL . 'users/user_credit_record.tpl');
     }
 
+     /**
+     * 商品分享二维码，现在只是实现了商品的原始网址，要是在微信中的话，需要加上oauth网址，实现扫码直接登录，然后跳转的功能
+     * 具体不在详细写明
+     * 采用生成二维码图片的方式，如果已经生成了，就不再重复生成了，直接返回图片地址
+     */ 
+    
+    function product_share_qrcode($Query)
+    {
+        global $config;
+        $product_id = intval($Query->id);
+        if($product_id>0)
+        {
+            $url = $config->domain."?/vProduct/view/id=".$product_id;
+
+            $qrcode_uri = $config->domain.'/uploads/qrcode/product/'.$product_id.".png";
+
+            $qrcode_path = APP_PATH.'/uploads/qrcode/product/'.$product_id.".png";
+
+            if(!file_exists($qrcode_path))
+            {
+                include APP_PATH . 'lib/phpqrcode/phpqrcode.php';
+                $errorCorrectionLevel = 'L';//容错级别 
+                $matrixPointSize = 6;//生成图片大小 
+                QRcode::png($url, $qrcode_path, $errorCorrectionLevel, $matrixPointSize, 2); 
+                imagepng($QR, $qrcode_path); 
+            }
+            echo "<img src='".$qrcode_uri."'>";
+        }
+    }
+
+
 }

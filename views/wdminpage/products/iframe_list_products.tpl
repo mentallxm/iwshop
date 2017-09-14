@@ -47,6 +47,7 @@
                 <td class="prices font12">&yen;<%=list[i].sale_prices%></td>
                 <td><%=list[i].product_readi%></td>
                 <th>
+                    <a class="pd-qrcodebtn fancybox.ajax" data-fancybox-type="ajax" href="?/WdminPage/product_share_qrcode/id=<%=list[i].product_id%>" data-product-id="<%=list[i].product_id%>">二维码</a>
                     <a class="pd-altbtn" href="?/WdminPage/iframe_alter_product/mod=edit&id=<%=list[i].product_id%>" data-product-id="<%=list[i].product_id%>">编辑</a>&nbsp;
                     <a class="pd-altbtn pd-switchonline <%if(list[i].product_online == 1){%>tip<%}%>" href="javascript:;" data-product-id="<%=list[i].product_id%>" data-product-online="<%=list[i].product_online%>"><%if(list[i].product_online == 1){%>下架<%}else{%>上架<%}%></a>&nbsp;
                     <a class="pd-altbtn pd-del-btn del" href="javascript:;" data-product-id="<%=list[i].product_id%>">删除</a>

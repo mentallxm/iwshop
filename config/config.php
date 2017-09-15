@@ -45,13 +45,13 @@ $config->debug = true;
 $config->db['host'] = 'localhost';
 
 // 数据库名
-$config->db['db'] = 'iwgit';
+$config->db['db'] = '';
 
 // 数据库用户
-$config->db['user'] = 'root';
+$config->db['user'] = '';
 
 // 数据库密码
-$config->db['pass'] = '521strawer';
+$config->db['pass'] = '';
 
 // 是否已经通过微信认证
 $config->wechatVerifyed = true;
@@ -68,7 +68,7 @@ $config->shoproot = '/';
 
 
 // 系统根域名 /结尾
-$config->domain = 'http://iw.com/';
+$config->domain = '';
 
 
 // 不需要微信支付直接下单 测试用

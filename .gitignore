@@ -46,5 +46,3 @@ tmp
 /static/images/test
 /cache/
 
-/config/config.php
-/config/config_oss.php

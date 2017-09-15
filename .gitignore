@@ -45,3 +45,6 @@ tmp
 /static/less/css
 /static/images/test
 /cache/
+
+/config/config.php
+/config/config_oss.php

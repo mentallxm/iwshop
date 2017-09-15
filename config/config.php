@@ -45,13 +45,13 @@ $config->debug = true;
 $config->db['host'] = 'localhost';
 
 // 数据库名
-$config->db['db'] = '';
+$config->db['db'] = 'iwgit';
 
 // 数据库用户
-$config->db['user'] = '';
+$config->db['user'] = 'root';
 
 // 数据库密码
-$config->db['pass'] = '';
+$config->db['pass'] = '521strawer';
 
 // 是否已经通过微信认证
 $config->wechatVerifyed = true;
